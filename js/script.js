@@ -18,6 +18,8 @@ let showFilling = document.getElementById('show-filling');
 let showDecor = document.getElementById('show-decor');
 let price = document.getElementById('price');
 let sum = document.getElementById('sum');
+let lettersJumpingList = document.querySelectorAll('.letters-jumping');
+let pricingSum = 0;
 
 product.addEventListener('change', (event) => {
    if ((event.target.name == 'yeast' || event.target.name == 'sugary') &&
@@ -44,9 +46,7 @@ quantity.addEventListener('input', (event) => {
 document.addEventListener('click', (event) => {
    if (event.target.closest('.step__button')) {
       switchingStep(event);
-      if (event.target.closest('.step__button') == stepButton[stepButton.length - 1]) {
-         showFormData()
-      }
+
    }
    if (event.target.closest('.page-button')) {
       changePage(getNamberButton(event, 'page-button'))
@@ -59,8 +59,22 @@ document.addEventListener('click', (event) => {
       quantityDicrement(quantity);
       countSum();
    }
-
+   if (stepItem[stepItem.length - 1].classList.contains('active')) {
+      showFormData();
+      countSum();
+   }
+   setPrice();
 })
+
+function setPrice() {
+   pricingSum = 0;
+   for (let e of product.elements) {
+      if (e.checked) {
+         pricingSum = (pricingSum + Number(e.dataset.pricing));
+      }
+   }
+   price.innerHTML = pricingSum.toFixed(2) + '$';
+}
 
 function quantityIncrement(element) {
    if (Number(element.value) < Number(element.max)) { element.value++ }
@@ -125,13 +139,8 @@ function removeCheked(number) {
    stepButton[0].click();
 }
 
-
 function showFormData() {
    let f = new FormData(product);
-   console.log(typeof f.get('yeast'));
-   console.log(f.get('yeast'));
-
-
    showYeast.innerHTML = f.get('yeast');
    showSugary.innerHTML = f.get('sugary');
    showFilling.innerHTML = f.get('filling');
@@ -139,11 +148,8 @@ function showFormData() {
 }
 
 function countSum() {
-   sum.innerHTML = (price.dataset.price * quantity.value).toFixed(2) + '$';
+   sum.innerHTML = (pricingSum * quantity.value).toFixed(2) + '$';
 }
-
-
-let lettersJumpingList = document.querySelectorAll('.letters-jumping');
 
 preparationLettersJumping()
 function preparationLettersJumping() {

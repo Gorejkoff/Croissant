@@ -62,7 +62,7 @@
                 </div>
               </div>
               <div class="start page-button" data-button="2">
-                <button type="button" class="red-button">start</button>
+                <button type="button" class="red-button glare">start</button>
               </div>
             </div>
             <div class="image">
@@ -110,9 +110,6 @@
 
             <div class="step__shell">
 
-
-
-
               <div class="step__block active" data-tab="1">
                 <div class="step__block-img">
                   <img class="step__img active" src="./img/webp/product_1.webp" alt="Изображение продукта" />
@@ -120,22 +117,22 @@
                 <div class="step__inputs border-center">
                   <label class="step__input-block">
                     <span class="step__input-text">yeast</span>
-                    <input type="radio" name="yeast" value="yeast" required />
+                    <input type="radio" name="yeast" data-pricing="0.5" value="yeast" required />
                     <span class="step__input-check"></span>
                   </label>
                   <label class="step__input-block">
                     <span class="step__input-text">yeast-free</span>
-                    <input type="radio" name="yeast" value="yeast-free" required />
+                    <input type="radio" name="yeast" data-pricing="0.67" value="yeast-free" required />
                     <span class="step__input-check"></span>
                   </label>
                   <label class="step__input-block">
                     <span class="step__input-text">sugary</span>
-                    <input type="radio" name="sugary" value="sugary" required />
+                    <input type="radio" name="sugary" data-pricing="0.3" value="sugary" required />
                     <span class="step__input-check"></span>
                   </label>
                   <label class="step__input-block">
                     <span class="step__input-text">sugar-free</span>
-                    <input type="radio" name="sugary" value="sugar-free" required />
+                    <input type="radio" name="sugary" data-pricing="0" value="sugar-free" required />
                     <span class="step__input-check"></span>
                   </label>
                 </div>
@@ -152,22 +149,22 @@
                 <div class="step__inputs">
                   <label class="step__input-block" data-button="1">
                     <span class="step__input-text">ham & cheese</span>
-                    <input type="radio" name="filling" value="ham & cheese" required />
+                    <input type="radio" name="filling" data-pricing="0.59" value="ham & cheese" required />
                     <span class="step__input-check"></span>
                   </label>
                   <label class="step__input-block" data-button="2">
                     <span class="step__input-text">classic</span>
-                    <input type="radio" name="filling" value="classic" required />
+                    <input type="radio" name="filling" data-pricing="0.2" value="classic" required />
                     <span class="step__input-check"></span>
                   </label>
                   <label class="step__input-block" data-button="3">
                     <span class="step__input-text">cream cheese & salmon</span>
-                    <input type="radio" name="filling" value="cream cheese & salmon" required />
+                    <input type="radio" name="filling" data-pricing="0.83" value="cream cheese & salmon" required />
                     <span class="step__input-check"></span>
                   </label>
                   <label class="step__input-block" data-button="4">
                     <span class="step__input-text">cream</span>
-                    <input type="radio" name="filling" value="cream" required />
+                    <input type="radio" name="filling" data-pricing="0.45" value="cream" required />
                     <span class="step__input-check"></span>
                   </label>
                 </div>
@@ -183,17 +180,17 @@
                 <div class="step__inputs">
                   <label class="step__input-block" data-button="1">
                     <span class="step__input-text">without</span>
-                    <input type="radio" name="decor" value="without" required />
+                    <input type="radio" name="decor" data-pricing="0" value="without" required />
                     <span class="step__input-check"></span>
                   </label>
                   <label class="step__input-block" data-button="2">
                     <span class="step__input-text">icing sugar</span>
-                    <input type="radio" name="decor" value="icing sugar" required />
+                    <input type="radio" name="decor" data-pricing="0.18" value="icing sugar" required />
                     <span class="step__input-check"></span>
                   </label>
                   <label class="step__input-block" data-button="3">
                     <span class="step__input-text">chocolate</span>
-                    <input type="radio" name="decor" value="chocolate" required />
+                    <input type="radio" name="decor" data-pricing="0.23" value="chocolate" required />
                     <span class="step__input-check"></span>
                   </label>
                 </div>
@@ -224,7 +221,7 @@
                 <div class="step__choice-block">
                   <div class="step__choice-price">
                     <div class="step__choice-price-title">Price</div>
-                    <div class="step__choice-price-text" id="price" data-price="1.68">1.68$</div>
+                    <div class="step__choice-price-text" id="price">1.68$</div>
                   </div>
 
                   <div class="step__choice-quantity">
@@ -247,11 +244,11 @@
                 </div>
                 <div class="step__choice-price">
                   <div class="step__choice-price-title">Total amount:</div>
-                  <div class="step__choice-price-text" id="sum">1.68$</div>
+                  <div class="step__choice-price-text" id="sum"></div>
                 </div>
 
                 <div class="step__choice-order">
-                  <button type="submit" class="red-button">Place an order</button>
+                  <button type="submit" class="red-button glare">Place an order</button>
                 </div>
 
               </div>
