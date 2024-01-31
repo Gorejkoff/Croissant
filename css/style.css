@@ -231,6 +231,7 @@ main {
 }
 
 .step__choice-order .red-button {
+  margin: 0 auto;
   font-size: 32px;
 }
 
@@ -244,7 +245,8 @@ main {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px 80px;
+  padding: 8px 40px;
+  max-width: calc(100vw - 80px);
   color: #db1414;
   font-family: "Birds Personality";
   font-weight: 500;
@@ -582,12 +584,14 @@ main {
   font-weight: 700;
   margin-bottom: 50px;
   font-size: 50px;
+  text-align: center;
 }
 
 .step__choice-product,
 .step__choice-price,
 .step__choice-quantity {
   margin-bottom: 50px;
+  margin-right: 50px;
 }
 
 .step__choice-quantity-input {
@@ -687,7 +691,14 @@ input[type="number"]::-webkit-inner-spin-button {
   margin-bottom: 20px;
   font-size: 30px;
   font-weight: 700;
+}
 
+.step__choice-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .step__choice-price-text {
@@ -754,6 +765,14 @@ input[type="number"]::-webkit-inner-spin-button {
   .step__item:not(:last-child) {
     position: relative;
     margin-bottom: 58px;
+  }
+
+  .step__choice-order .red-button {
+    margin: 0;
+  }
+
+  .step__choice-title {
+    text-align: start;
   }
 }
 
@@ -866,4 +885,9 @@ input[type="number"]::-webkit-inner-spin-button {
     width: 1px;
     height: 100%;
   }
+
+  .red-button {
+    padding: 8px 80px;
+  }
+
 }
