@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <title>HTML</title>
+  <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+  <meta name="viewport" content="width=device-width" initial-scale="1.0" />
+  <!--   <link rel="preload" as="font" type="font/woff2" href="./fonts/Birds_Personality.woff2" crossorigin="" />
+  <link rel="preload" as="font" type="font/woff2" href="./fonts/Cormorant-Regular.woff2" crossorigin="" />
+  <link rel="preload" as="font" type="font/woff2" href="./fonts/Cormorant-Bold.woff2" crossorigin="" /> -->
+
+  <link rel="stylesheet" href="./css/normalize.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <main class="main">
+
+
+      <div class="main-page page-tab active" data-tab="1">
+        <div class="fon">
+          <img class="fon__img-1" src="./img/svg/line-1.svg" alt="" />
+          <img class="fon__img-2" src="./img/svg/line-2.svg" alt="" />
+          <img class="fon__img-3" src="./img/svg/line-3.svg" alt="" />
+          <img class="fon__img-4" src="./img/svg/line-4.svg" alt="" />
+        </div>
+        <div class="main__container">
+          <div class="start-page__content-container">
+            <div class="content">
+              <div class="content__header">
+                <nav class="menu">
+                  <ol class="menu__list">
+                    <li class="menu__item"><a href="#0" class="letters-jumping">About us</a></li>
+                    <li class="menu__item"><a href="#0" class="letters-jumping">Contacts</a></li>
+                    <li class="menu__item"><a href="#0" class="letters-jumping">Delivery</a></li>
+                  </ol>
+                </nav>
+                <div class="logo">croissant</div>
+              </div>
+              <div class="content__info">
+                <div class="content__info-shell left">
+                  <div class="content__info-block">
+                    <div class="content__info-title">
+                      CROISSANT - THE BAKERY YOU CHOOSE!
+                    </div>
+                    <div class="content__info-text">
+                      Our products are prepared only from fresh products, and
+                      the courier delivers the finished products still warm :)
+                    </div>
+                  </div>
+                </div>
+                <div class="content__info-shell center">
+                  <div class="content__info-block">
+                    <div class="content__info-title">
+                      CREATE YOUR OWN DESERT
+                    </div>
+                    <div class="content__info-text">
+                      Choose the dough, filling and enjoy!
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="start page-button" data-button="2">
+                <button type="button" class="red-button">start</button>
+              </div>
+            </div>
+            <div class="image">
+              <img src="./img/webp/img_1.webp" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="step page-tab" data-tab="2">
+        <div class="step__container">
+
+          <div class="fon">
+            <img class="fon__img-5" src="./img/svg/line-1.svg" alt="" />
+            <img class="fon__img-6" src="./img/svg/line-2.svg" alt="" />
+            <img class="fon__img-7" src="./img/svg/line-1.svg" alt="" />
+            <img class="fon__img-8" src="./img/svg/line-4.svg" alt="" />
+          </div>
+
+
+          <div class="step__nav">
+            <ol class="step__list">
+              <li class="step__item active ">
+                <button class="step__button" type="button" data-button="1">1</button>
+                <span class="step__button-signature">Choose dough</span>
+              </li>
+              <li class="step__item no-event">
+                <button class="step__button" type="button" data-button="2">2</button>
+                <span class="step__button-signature">Choose filling</span>
+              </li>
+              <li class="step__item no-event">
+                <button class="step__button" type="button" data-button="3">3</button>
+                <span class="step__button-signature">Choose decor</span>
+              </li>
+              <li class="step__item no-event">
+                <button class="step__button" type="button" data-button="4">4</button>
+                <span class="step__button-signature">Place an order</span>
+              </li>
+            </ol>
+          </div>
+
+
+          <form class="step__body" action="#" method="post" name="product" id="product">
+
+            <div class="step__shell">
+
+
+
+
+              <div class="step__block active" data-tab="1">
+                <div class="step__block-img">
+                  <img class="step__img active" src="./img/webp/product_1.webp" alt="Изображение продукта" />
+                </div>
+                <div class="step__inputs border-center">
+                  <label class="step__input-block">
+                    <span class="step__input-text">yeast</span>
+                    <input type="radio" name="yeast" value="yeast" required />
+                    <span class="step__input-check"></span>
+                  </label>
+                  <label class="step__input-block">
+                    <span class="step__input-text">yeast-free</span>
+                    <input type="radio" name="yeast" value="yeast-free" required />
+                    <span class="step__input-check"></span>
+                  </label>
+                  <label class="step__input-block">
+                    <span class="step__input-text">sugary</span>
+                    <input type="radio" name="sugary" value="sugary" required />
+                    <span class="step__input-check"></span>
+                  </label>
+                  <label class="step__input-block">
+                    <span class="step__input-text">sugar-free</span>
+                    <input type="radio" name="sugary" value="sugar-free" required />
+                    <span class="step__input-check"></span>
+                  </label>
+                </div>
+              </div>
+
+
+              <div class="step__block" data-tab="2">
+                <div class="step__block-img">
+                  <img class="step__img active" src="./img/webp/product_23.webp" data-img="1" alt="Изображение продукта" />
+                  <img class="step__img" src="./img/webp/product_22.webp" data-img="2" alt="Изображение продукта" />
+                  <img class="step__img" src="./img/webp/product_21.webp" data-img="3" alt="Изображение продукта" />
+                  <img class="step__img" src="./img/webp/product_1.webp" data-img="4" alt="Изображение продукта" />
+                </div>
+                <div class="step__inputs">
+                  <label class="step__input-block" data-button="1">
+                    <span class="step__input-text">ham & cheese</span>
+                    <input type="radio" name="filling" value="ham & cheese" required />
+                    <span class="step__input-check"></span>
+                  </label>
+                  <label class="step__input-block" data-button="2">
+                    <span class="step__input-text">classic</span>
+                    <input type="radio" name="filling" value="classic" required />
+                    <span class="step__input-check"></span>
+                  </label>
+                  <label class="step__input-block" data-button="3">
+                    <span class="step__input-text">cream cheese & salmon</span>
+                    <input type="radio" name="filling" value="cream cheese & salmon" required />
+                    <span class="step__input-check"></span>
+                  </label>
+                  <label class="step__input-block" data-button="4">
+                    <span class="step__input-text">cream</span>
+                    <input type="radio" name="filling" value="cream" required />
+                    <span class="step__input-check"></span>
+                  </label>
+                </div>
+              </div>
+
+
+              <div class="step__block" data-tab="3">
+                <div class="step__block-img">
+                  <img class="step__img active" src="./img/webp/product_31.webp" data-img="1" alt="Изображение продукта" />
+                  <img class="step__img" src="./img/webp/product_33.webp" data-img="2" alt="Изображение продукта" />
+                  <img class="step__img" src="./img/webp/product_32.webp" data-img="3" alt="Изображение продукта" />
+                </div>
+                <div class="step__inputs">
+                  <label class="step__input-block" data-button="1">
+                    <span class="step__input-text">without</span>
+                    <input type="radio" name="decor" value="without" required />
+                    <span class="step__input-check"></span>
+                  </label>
+                  <label class="step__input-block" data-button="2">
+                    <span class="step__input-text">icing sugar</span>
+                    <input type="radio" name="decor" value="icing sugar" required />
+                    <span class="step__input-check"></span>
+                  </label>
+                  <label class="step__input-block" data-button="3">
+                    <span class="step__input-text">chocolate</span>
+                    <input type="radio" name="decor" value="chocolate" required />
+                    <span class="step__input-check"></span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="step__block" data-tab="4">
+                <div class="step__choice-title">Your choice:</div>
+
+                <div class="step__choice-product">
+                  <div class="step__choice-product-img"></div>
+
+                  <div class="step__choice-product-text">
+                    <div>
+                      <div class="step__chois-show-title">dough</div>
+                      <div class="step__chois-show" id="show-yeast"></div>
+                      <div class="step__chois-show" id="show-sugary"></div>
+                    </div>
+                    <div>
+                      <div class="step__chois-show-title">filling</div>
+                      <div class="step__chois-show" id="show-filling"></div>
+                    </div>
+                    <div>
+                      <div class="step__chois-show-title">decor</div>
+                      <div class="step__chois-show" id="show-decor"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="step__choice-price">
+                  <div class="step__choice-price-title">Price</div>
+                  <div class="step__choice-price-text" id="price" data-price="1.68">1.68$</div>
+                </div>
+
+                <div class="step__choice-quantity">
+                  <div class="step__choice-quantity-title">Quantity:</div>
+                  <div class="step__choice-quantity-block">
+                    <button type="button" class="step__choice-quantity-dicrement">
+                      <svg width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line y1="1" x2="14" y2="1" stroke="#FAFAF7" stroke-width="2" />
+                      </svg>
+                    </button>
+                    <input class="step__choice-quantity-input" type="number" min="1" max="100" name="quantity" value="1" id="" pattern="[0-9]">
+                    <button type="button" class="step__choice-quantity-increment">
+                      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line y1="7" x2="14" y2="7" stroke="#FAFAF7" stroke-width="2" />
+                        <line x1="7" y1="4.04994e-08" x2="7" y2="14" stroke="#FAFAF7" stroke-width="2" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="step__choice-price">
+                  <div class="step__choice-price-title">Total amount:</div>
+                  <div class="step__choice-price-text" id="sum">1.68$</div>
+                </div>
+
+                <div class="step__choice-order">
+                  <button type="submit" class="red-button">Place an order</button>
+                </div>
+
+              </div>
+            </div>
+            <div class="stap__back">
+              <button class="stap__back-button page-button" data-button="1" type="button">
+                <svg width="40" height="21" viewBox="0 0 40 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 20L20 1L39 20" stroke="black" />
+                </svg>
+              </button>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
