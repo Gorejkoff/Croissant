@@ -278,6 +278,7 @@ main {
   border: 3px solid #db1414;
   border-radius: 120px;
   box-shadow: 0px 0px 20px 0px #db1414;
+  text-transform: uppercase;
 }
 
 .fon {
@@ -383,7 +384,6 @@ main {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
