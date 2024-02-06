@@ -162,3 +162,36 @@ function preparationLettersJumping() {
    })
 }
 
+addFlashEffect();
+var mouseover = false;
+function addFlashEffect() {
+   document.querySelectorAll('.flash_effect').forEach((e) => {
+      e.addEventListener('mouseover', (event) => addflash(event));
+      e.addEventListener('mouseout', (event) => removeFlash(event));
+   })
+}
+
+function addflash(event) {
+   mouseover = true;
+   event.target.insertAdjacentHTML(
+      'beforeend',
+      `<div class="flash" style="--x:${random()}%; --y:${random()}%">
+      <div class="flash__body">
+      </div></div>`
+   )
+   setTimeout(() => {
+      event.target.querySelector('.flash').remove();
+   }, 1500)
+   setTimeout(() => {
+      mouseover && addflash(event)
+   }, 300)
+}
+
+function removeFlash() {
+   mouseover = false;
+}
+
+function random() {
+   return (Math.random() * 100).toFixed(2);
+}
+
